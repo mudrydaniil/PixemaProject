@@ -1,0 +1,10 @@
+services:
+  vite-react-ts:           # ← здесь должны быть пробелы перед именем сервиса
+    build: .               # ← 2 пробела перед build
+    container_name: vite-react-ts
+    ports:
+      - "5173:5173"        # ← 4 пробела перед тире
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run dev -- --host 0.0.0.0 --port 5173
