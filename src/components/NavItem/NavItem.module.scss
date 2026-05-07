@@ -1,0 +1,30 @@
+@use '../../assets/styles/variables' as *;
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: $light;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+    padding: 12px 0;
+
+    .icon {
+        display: flex;
+        align-items: center;
+
+        svg {
+            fill: currentColor;
+        }
+    }
+
+    &:hover {
+        color: $white;
+    }
+
+    &.active {
+        color: $primary;
+    }
+}
