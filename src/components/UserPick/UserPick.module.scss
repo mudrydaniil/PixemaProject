@@ -1,0 +1,43 @@
+@use '../../assets/styles/variables' as *;
+
+.userPick {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; // Расталкивает инфо и стрелку по краям
+  width: 264px; // Как на скрине image_2ab192.png
+  height: 56px;
+  cursor: pointer;
+  padding: 0 4px; // Небольшой отступ внутри, чтобы элементы не жались к границам контейнера
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 20px; // Расстояние между аватаром и именем
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  background-color: $primary;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.name {
+  color: $white;
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap; // Чтобы имя не переносилось
+}
+
+.arrow {
+  width: 24px;
+  height: 24px;
+  color: $light; // #AFB2B6
+}
